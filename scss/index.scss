@@ -17,9 +17,52 @@ body {
     width: 100%;
     height: pxTorem(44px);
     background: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 pxTorem(10px);
+    box-sizing: border-box;
+    span,
+    i {
+        font-size: pxTorem(14px);
+        color: #fff;
+    }
 }
 
 .section {
     width: 100%;
     flex: 1;
+    .banner {
+        width: 100%;
+        height: pxTorem(150px);
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            .swiper-wrapper {
+                height: 100%;
+            }
+        }
+    }
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: pxTorem(10px) pxTorem(2px);
+        box-sizing: border-box;
+        dl {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            dt {
+                width: pxTorem(45px);
+                height: pxTorem(45px);
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
 }
